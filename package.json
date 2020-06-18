@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^3.9.5"
+  }
 }
